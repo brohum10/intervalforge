@@ -1,0 +1,282 @@
+{
+  "calibration": {
+    "coverage_percent": 90,
+    "groups": {
+      "noisy": {
+        "count": 94,
+        "radius": 5.343767784629762,
+        "rank": 86
+      },
+      "quiet": {
+        "count": 106,
+        "radius": 0.9790130216061357,
+        "rank": 97
+      }
+    },
+    "pooled": {
+      "count": 200,
+      "radius": 4.427719364771461,
+      "rank": 181
+    },
+    "predictor": {
+      "feature_names": [
+        "workload"
+      ],
+      "intercept": 2.239287790215711,
+      "means": [
+        -0.03034893851246517
+      ],
+      "scales": [
+        1.1312910174055035
+      ],
+      "training_sha256": "d5d9253b7d842eb45e04891781875257a0078f91b24080daf456875fa150dbd4",
+      "weights": [
+        3.612755711110532
+      ]
+    }
+  },
+  "corpus": "seed=20261028; y=2+3*x+uniform noise; quiet +/-0.75, noisy +/-6; group chosen before target",
+  "dataset_sha256": "8d86653a4bc514fab483e3a17a7a9864bc22dc615ba28833f7f417e5f9972d5f",
+  "noise_shift_stress": {
+    "grouped": {
+      "by_group": {
+        "noisy": {
+          "bounded_coverage": 0.23469387755102042,
+          "bounded_rows": 98,
+          "coverage_including_unbounded": 0.23469387755102042,
+          "mean_finite_width": 10.687535569259525,
+          "rmse": 10.874039872165616,
+          "rows": 98,
+          "unbounded_rows": 0
+        },
+        "quiet": {
+          "bounded_coverage": 0.43137254901960786,
+          "bounded_rows": 102,
+          "coverage_including_unbounded": 0.43137254901960786,
+          "mean_finite_width": 1.9580260432122714,
+          "rmse": 1.333240762745797,
+          "rows": 102,
+          "unbounded_rows": 0
+        }
+      },
+      "summary": {
+        "bounded_coverage": 0.335,
+        "bounded_rows": 200,
+        "coverage_including_unbounded": 0.335,
+        "mean_finite_width": 6.235485710975424,
+        "rmse": 7.671144954591023,
+        "rows": 200,
+        "unbounded_rows": 0
+      }
+    },
+    "pooled": {
+      "by_group": {
+        "noisy": {
+          "bounded_coverage": 0.19387755102040816,
+          "bounded_rows": 98,
+          "coverage_including_unbounded": 0.19387755102040816,
+          "mean_finite_width": 8.855438729542922,
+          "rmse": 10.874039872165616,
+          "rows": 98,
+          "unbounded_rows": 0
+        },
+        "quiet": {
+          "bounded_coverage": 1.0,
+          "bounded_rows": 102,
+          "coverage_including_unbounded": 1.0,
+          "mean_finite_width": 8.855438729542922,
+          "rmse": 1.333240762745797,
+          "rows": 102,
+          "unbounded_rows": 0
+        }
+      },
+      "summary": {
+        "bounded_coverage": 0.605,
+        "bounded_rows": 200,
+        "coverage_including_unbounded": 0.605,
+        "mean_finite_width": 8.855438729542922,
+        "rmse": 7.671144954591023,
+        "rows": 200,
+        "unbounded_rows": 0
+      }
+    }
+  },
+  "ridge": 0.01,
+  "split_counts": {
+    "calibration": 200,
+    "test": 200,
+    "train": 200
+  },
+  "stress_definition": "Frozen predictor/calibration; test residual noise multiplied by 3, plus two new-group rows. Not a new IID test study.",
+  "test": {
+    "grouped": {
+      "by_group": {
+        "noisy": {
+          "bounded_coverage": 0.8877551020408163,
+          "bounded_rows": 98,
+          "coverage_including_unbounded": 0.8877551020408163,
+          "mean_finite_width": 10.687535569259525,
+          "rmse": 3.6537726921718563,
+          "rows": 98,
+          "unbounded_rows": 0
+        },
+        "quiet": {
+          "bounded_coverage": 0.9313725490196079,
+          "bounded_rows": 102,
+          "coverage_including_unbounded": 0.9313725490196079,
+          "mean_finite_width": 1.9580260432122714,
+          "rmse": 0.5695692946458549,
+          "rows": 102,
+          "unbounded_rows": 0
+        }
+      },
+      "summary": {
+        "bounded_coverage": 0.91,
+        "bounded_rows": 200,
+        "coverage_including_unbounded": 0.91,
+        "mean_finite_width": 6.235485710975424,
+        "rmse": 2.5897829207648853,
+        "rows": 200,
+        "unbounded_rows": 0
+      }
+    },
+    "pooled": {
+      "by_group": {
+        "noisy": {
+          "bounded_coverage": 0.7142857142857143,
+          "bounded_rows": 98,
+          "coverage_including_unbounded": 0.7142857142857143,
+          "mean_finite_width": 8.855438729542922,
+          "rmse": 3.6537726921718563,
+          "rows": 98,
+          "unbounded_rows": 0
+        },
+        "quiet": {
+          "bounded_coverage": 1.0,
+          "bounded_rows": 102,
+          "coverage_including_unbounded": 1.0,
+          "mean_finite_width": 8.855438729542922,
+          "rmse": 0.5695692946458549,
+          "rows": 102,
+          "unbounded_rows": 0
+        }
+      },
+      "summary": {
+        "bounded_coverage": 0.86,
+        "bounded_rows": 200,
+        "coverage_including_unbounded": 0.86,
+        "mean_finite_width": 8.855438729542922,
+        "rmse": 2.5897829207648853,
+        "rows": 200,
+        "unbounded_rows": 0
+      }
+    }
+  },
+  "unseen_group_stress": {
+    "grouped": {
+      "by_group": {
+        "unseen": {
+          "bounded_coverage": null,
+          "bounded_rows": 0,
+          "coverage_including_unbounded": 1.0,
+          "mean_finite_width": null,
+          "rmse": 0.4436232047037752,
+          "rows": 2,
+          "unbounded_rows": 2
+        }
+      },
+      "predictions": [
+        {
+          "bounded": false,
+          "calibration_count": 0,
+          "covered": true,
+          "group": "unseen",
+          "id": "unseen-0",
+          "lower": null,
+          "point": 2.336206531061463,
+          "radius": null,
+          "rank": 1,
+          "reason": "unseen_group",
+          "target": 2,
+          "upper": null
+        },
+        {
+          "bounded": false,
+          "calibration_count": 0,
+          "covered": true,
+          "group": "unseen",
+          "id": "unseen-1",
+          "lower": null,
+          "point": 5.5296869490320795,
+          "radius": null,
+          "rank": 1,
+          "reason": "unseen_group",
+          "target": 5,
+          "upper": null
+        }
+      ],
+      "summary": {
+        "bounded_coverage": null,
+        "bounded_rows": 0,
+        "coverage_including_unbounded": 1.0,
+        "mean_finite_width": null,
+        "rmse": 0.4436232047037752,
+        "rows": 2,
+        "unbounded_rows": 2
+      }
+    },
+    "pooled": {
+      "by_group": {
+        "unseen": {
+          "bounded_coverage": 1.0,
+          "bounded_rows": 2,
+          "coverage_including_unbounded": 1.0,
+          "mean_finite_width": 8.855438729542922,
+          "rmse": 0.4436232047037752,
+          "rows": 2,
+          "unbounded_rows": 0
+        }
+      },
+      "predictions": [
+        {
+          "bounded": true,
+          "calibration_count": 200,
+          "covered": true,
+          "group": "unseen",
+          "id": "unseen-0",
+          "lower": -2.0915128337099977,
+          "point": 2.336206531061463,
+          "radius": 4.427719364771461,
+          "rank": 181,
+          "reason": "calibrated",
+          "target": 2,
+          "upper": 6.763925895832924
+        },
+        {
+          "bounded": true,
+          "calibration_count": 200,
+          "covered": true,
+          "group": "unseen",
+          "id": "unseen-1",
+          "lower": 1.1019675842606187,
+          "point": 5.5296869490320795,
+          "radius": 4.427719364771461,
+          "rank": 181,
+          "reason": "calibrated",
+          "target": 5,
+          "upper": 9.95740631380354
+        }
+      ],
+      "summary": {
+        "bounded_coverage": 1.0,
+        "bounded_rows": 2,
+        "coverage_including_unbounded": 1.0,
+        "mean_finite_width": 8.855438729542922,
+        "rmse": 0.4436232047037752,
+        "rows": 2,
+        "unbounded_rows": 0
+      }
+    }
+  },
+  "version": 1
+}

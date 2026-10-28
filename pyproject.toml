@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intervalforge"
+version = "0.1.0"
+description = "Split-conformal regression intervals with train-only ridge, group diagnostics, and explicit unbounded cases"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Soham Jindal"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/brohum10/intervalforge"
+Issues = "https://github.com/brohum10/intervalforge/issues"
+
+[project.scripts]
+intervalforge = "intervalforge.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["intervalforge*"]
+
+[tool.black]
+line-length = 100
